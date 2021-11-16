@@ -51,20 +51,27 @@ Die Stonierung erfolgt wie folgt:
 . Anmeldung
 . Auswählen der Karten die man stornieren will ()
 . Anzahl der gewünschten Karten auswählen (MaxWert = noch frei Plätze - Datenbankabfrage)
-. simulierte Bezahlung
+. Ausgabe eines Gutscheins
 . Rückkehr zum Start-Screen
 
 == Projektziel(e):
 
-
+-
 
 == Projektbeschreibung:
 
-
+-
 
 == Meilensteine:
 
-
+[options="header"]
+|===
+| Meilenstein / Ergebnis | Soll-Termin
+| Basic Java Programm | xx.xx.yyyy
+| <text> | xx.xx.yyyy
+| <text> | xx.xx.yyyy
+| <text> | xx.xx.yyyy
+|===
 
 == Freigaben:
 
