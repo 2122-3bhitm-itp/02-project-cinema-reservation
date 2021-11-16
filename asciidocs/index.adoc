@@ -33,12 +33,26 @@ Das Projekt soll dabei Abhilfe schaffen. Indem es die Dauer verkürzt und somit 
 == Projektergebnis:
 
 Das Projekt soll am Ende mit einer grafischen Benutzeroberfläche gesteuert werden.
+
+=== Reservierung
+
 Die Reservierung erfolgt wie folgt:
 
 . Anmeldung
-. Film aus einer Liste auswählen (nur Filme die noch Freie Plätze haben - Datenbankanbindung)
+. Film aus einer Liste auswählen (nur Filme die noch Freie Plätze haben - Datenbankabfrage)
 . Anzahl der gewünschten Karten auswählen (MaxWert = noch frei Plätze - Datenbankabfrage)
 . simulierte Bezahlung
+. Rückkehr zum Start-Screen
+
+=== Stonierung
+
+Die Stonierung erfolgt wie folgt:
+
+. Anmeldung
+. Auswählen der Karten die man stornieren will ()
+. Anzahl der gewünschten Karten auswählen (MaxWert = noch frei Plätze - Datenbankabfrage)
+. simulierte Bezahlung
+. Rückkehr zum Start-Screen
 
 == Projektziel(e):
 
