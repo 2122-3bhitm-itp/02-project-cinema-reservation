@@ -17,40 +17,69 @@ ifdef::backend-html5[]
 
 == Projektbezeichnung:
 
+Kinoreservierung
 
 == Projektauftraggeber:
 
+Prof. Mag. Dr. Thomas Stütz
 
 == Projekthintergrund:
 
+Viele Kinos nützen für die Reservierung noch altmodische Kassenautomaten, welche jedoch sehr ineffizient und teuer sind.
+Oft sieht man dies Offensichtlich an langen Schlangen vor den Kassen.
+
+Das Projekt soll dabei Abhilfe schaffen. Indem es die Dauer verkürzt und somit den Warteschlangen entgegenwirkt.
 
 == Projektergebnis:
 
+Das Projekt soll am Ende mit einer grafischen Benutzeroberfläche gesteuert werden.
+Die Reservierung erfolgt wie folgt:
+
+. Anmeldung
+. Film aus einer Liste auswählen (nur Filme die noch Freie Plätze haben - Datenbankanbindung)
+. Anzahl der gewünschten Karten auswählen (MaxWert = noch frei Plätze - Datenbankabfrage)
+. simulierte Bezahlung
 
 == Projektziel(e):
+
 
 
 == Projektbeschreibung:
 
 
+
 == Meilensteine:
+
 
 
 == Freigaben:
 
+-
 
 == Projektstart:
 
+Information folgt durch Projektauftraggeber
 
 == Projektende:
 
+Information folgt durch Projektauftraggeber
 
 == Projektressourcen:
 
+* IntelliJ IDEA
+* JavaFX
+* Java
+* Maven
+* Docker
+* GitHub
 
 == Projektrisiken:
 
+Ein Lockdown könnte die Kommunikation und den Ideenaustausch erschwären.
 
 == Projektorganisation:
 
+* Projektleiter: Oliver Schatzberger
+* Stellvertreter: Peter Klose
+* Team: Lukas Lummerstorfer, Sebastian Hager
 
