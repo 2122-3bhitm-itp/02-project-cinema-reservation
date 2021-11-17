@@ -56,8 +56,8 @@ Die Stonierung sollte wie folgt ablaufen:
 
 == Projektziel(e):
 
-. sinnvolles anwendbares Produkt
-. Pünktlichkeit
+* sinnvolles anwendbares Produkt
+* Pünktlichkeit
 
 == Projektbeschreibung:
 
