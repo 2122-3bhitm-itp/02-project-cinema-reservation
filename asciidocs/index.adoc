@@ -24,7 +24,7 @@ Kinoreservierung
 Prof. Mag. Dr. Thomas Stütz
 
 == Projekthintergrund:
-
+//Überarbeiten
 Viele Kinos nützen für die Reservierung noch altmodische Kassenautomaten, welche jedoch sehr ineffizient und teuer sind.
 Oft sieht man dies Offensichtlich an langen Schlangen vor den Kassen.
 
@@ -36,17 +36,17 @@ Das Projekt soll am Ende mit einer grafischen Benutzeroberfläche gesteuert werd
 
 === Reservierung
 
-Die Reservierung sollte wie folgt ablaufen:
+Die Reservierung wird wie folgt ablaufen:
 
 . Anmeldung
-. Film aus einer Liste auswählen (nur Filme die noch Freie Plätze haben - Datenbankabfrage)
-. Anzahl der gewünschten Karten auswählen (MaxWert = noch frei Plätze - Datenbankabfrage)
+. Film aus einer Liste auswählen (nur Filme die noch freie Plätze haben - Datenbankabfrage)
+. Anzahl der gewünschten Karten auswählen (MaxWert = noch freie Plätze - Datenbankabfrage)
 . simulierte Bezahlung
 . Rückkehr zum Start-Screen
 
-=== Stonierung
+=== Stornierung
 
-Die Stonierung sollte wie folgt ablaufen:
+Die Stornierung wird wie folgt ablaufen:
 
 . Anmeldung
 . Auswählen der Karten die man stornieren will ()
@@ -71,7 +71,7 @@ Der User soll einen Platz auswählen können auf einer Karte die in Kategorien u
 | Basic Java Programm | xx.xx.yyyy
 | <text> | xx.xx.yyyy
 | <text> | xx.xx.yyyy
-| <text> | xx.xx.yyyy
+| Fertiges Projekt | xx.06.2022
 |===
 
 == Freigaben:
@@ -88,10 +88,6 @@ Information folgt durch Projektauftraggeber
 
 == Projektressourcen:
 
-* Maven
-* Java
-* JavaFX
-* Docker
 * IntelliJ IDEA
 * GitHub
 
