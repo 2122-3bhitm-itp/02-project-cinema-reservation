@@ -71,10 +71,9 @@ Der User soll einen Platz auswählen können auf einer Karte die in Kategorien u
 | Meilenstein / Ergebnis | Soll-Termin
 | Projektstart | 04.11.2021
 | Planung + Skizzen | 20.01.2022
-| Erstes Demo Programm | xx.xx.2022
-| Datenbankanbindung | xx.xx.2022
-| fertiges GUI Design | xx.xx.2022
-//| Fehlerbehebung | xx.xx.2022
+| Erstes Demo Programm | 17.02.2022
+| Datenbankanbindung | 03.03.2022
+| fertiges GUI Design | 05.05.2022
 | Fertiges Projekt | 16.06.2022
 |===
 
