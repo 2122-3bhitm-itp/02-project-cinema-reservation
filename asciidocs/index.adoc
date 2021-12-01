@@ -25,10 +25,11 @@ Prof. Mag. Dr. Thomas Stütz
 
 == Projekthintergrund:
 //Überarbeiten
-Viele Kinos nützen für die Reservierung noch altmodische Kassenautomaten, welche jedoch sehr ineffizient und teuer sind.
-Oft sieht man dies Offensichtlich an langen Schlangen vor den Kassen.
+Wenn ein neuer Film in die Kinos kommt, ist es sehr oft so, dass in den ersten Tagen die Filme sehr große Besucherzahlen verzeichnen.
+Für die Betreiber mag es ein Vorteil sein, dass viele Besucher kommen.
+Für die Kunden jedoch bedeutet ein großer Ansturm einerseits gutes(Viele Menschen wollen dort hin ich will auch dort hin) andererseits aber auch schlechtes (lange Wartezeiten und große Schlangen).
 
-Das Projekt soll dabei Abhilfe schaffen. Indem es die Dauer verkürzt und somit den Warteschlangen entgegenwirkt.
+Unser Projekt wird dabei Abhilfe schaffen. Wir werden den Kunden die Möglichkeit geben, sich in aller Ruhe den Film auszusuchen und anschließend zu Bezahlen. Ohne menschlichen Kontakt, ganz simple vom Handy, Tablet, PC oder auch direkt im Kino bei den aufgestellten Automaten.
 
 == Projektergebnis:
 
@@ -68,23 +69,23 @@ Der User soll einen Platz auswählen können auf einer Karte die in Kategorien u
 [options="header"]
 |===
 | Meilenstein / Ergebnis | Soll-Termin
-| Basic Java Programm | xx.xx.yyyy
-| <text> | xx.xx.yyyy
-| <text> | xx.xx.yyyy
-| Fertiges Projekt | xx.06.2022
+| Projektstart | 04.11.2021
+| Planung + Skizzen | 20.01.2022
+| Erstes Demo Programm | xx.xx.2022
+| Datenbankanbindung | xx.xx.2022
+| fertiges GUI Design | xx.xx.2022
+//| Fehlerbehebung | xx.xx.2022
+| Fertiges Projekt | 16.06.2022
 |===
 
-== Freigaben:
-
--
 
 == Projektstart:
 
-Information folgt durch Projektauftraggeber
+04.11.2021
 
 == Projektende:
 
-Information folgt durch Projektauftraggeber
+16.06.2022
 
 == Projektressourcen:
 
@@ -93,7 +94,7 @@ Information folgt durch Projektauftraggeber
 
 == Projektrisiken:
 
-* Performanceprobleme
+* Performanzprobleme
 * Coding-Probleme
 
 == Projektorganisation:
