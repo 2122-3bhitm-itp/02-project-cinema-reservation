@@ -24,7 +24,7 @@ Kinoreservierung
 Prof. Mag. Dr. Thomas Stütz
 
 == Projekthintergrund:
-//Überarbeiten
+
 Wenn ein neuer Film in die Kinos kommt, ist es sehr oft so, dass in den ersten Tagen die Filme sehr große Besucherzahlen verzeichnen.
 Für die Betreiber mag es ein Vorteil sein, dass viele Besucher kommen.
 Für die Kunden jedoch bedeutet ein großer Ansturm einerseits gutes(Viele Menschen wollen dort hin ich will auch dort hin) andererseits aber auch schlechtes (lange Wartezeiten und große Schlangen).
