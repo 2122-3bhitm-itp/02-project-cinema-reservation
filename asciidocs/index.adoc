@@ -27,9 +27,10 @@ Prof. Mag. Dr. Thomas Stütz
 
 Wenn ein neuer Film in die Kinos kommt, ist es sehr oft so, dass in den ersten Tagen die Filme sehr große Besucherzahlen verzeichnen.
 Für die Betreiber mag es ein Vorteil sein, dass viele Besucher kommen.
-Für die Kunden jedoch bedeutet ein großer Ansturm einerseits gutes(Viele Menschen wollen dort hin ich will auch dort hin) andererseits aber auch schlechtes (lange Wartezeiten und große Schlangen).
+Für die Kunden jedoch bedeutet ein großer Ansturm einerseits Gutes (viele Menschen wollen dort hin ich will auch dort hin), andererseits aber auch Schlechtes (lange Wartezeiten und große Schlangen).
 
-Unser Projekt wird dabei Abhilfe schaffen. Wir werden den Kunden die Möglichkeit geben, sich in aller Ruhe den Film auszusuchen und anschließend zu Bezahlen. Ohne menschlichen Kontakt, ganz simple vom Handy, Tablet, PC oder auch direkt im Kino bei den aufgestellten Automaten.
+Unser Projekt wird dabei Abhilfe schaffen. Wir werden den Kunden die Möglichkeit geben, sich in aller Ruhe den Film auszusuchen und anschließend zu Bezahlen.
+Ohne menschlichen Kontakt, ganz simple vom Handy, Tablet, PC oder auch direkt im Kino bei den aufgestellten Automaten.
 
 == Projektergebnis:
 
