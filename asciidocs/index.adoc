@@ -103,3 +103,20 @@ Der User soll einen Platz auswählen können auf einer Karte die in Kategorien u
 * Stellvertreter: Peter Klose
 * Team: Lukas Lummerstorfer, Sebastian Hager
 
+== Anwendungsfalldiagramm
+
+[plantuml,test]
+----
+@startuml
+left to right direction
+actor "Food Critic" as fc
+rectangle Restaurant {
+usecase "Eat Food" as UC1
+usecase "Pay for Food" as UC2
+usecase "Drink" as UC3
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+@enduml
+----
