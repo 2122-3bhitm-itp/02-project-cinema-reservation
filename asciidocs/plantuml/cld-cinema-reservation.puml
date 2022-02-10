@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+
+class CinemaHall{
+viewer: Costumer
+movie: Movie
+}
+
+class Costumer {
+id: int
+firstname: String
+lastname: String
+address: String
+}
+
+class Ticket{
+date: date
+price: double
+}
+
+class Movie{
+name: String
+length: int
+}
+CinemaHall --> Movie
+CinemaHall "*" --> "1" Costumer : Costumer >
+
+Costumer "*" -- "*" Movie
+
+(Costumer, Movie) .. Ticket
+@enduml

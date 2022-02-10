@@ -126,5 +126,11 @@ UC3 -- fa
 fc -- UC4
 UC4 --fa
 @enduml
+----
 
+== Klassendiagramm
+
+[plantuml]
+----
+include::plantuml/cld-cinema-reservation.puml[]
 ----
