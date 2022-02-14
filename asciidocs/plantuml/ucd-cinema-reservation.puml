@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor "Kinobesucher" as fc
+actor "Kinobesitzer" as fa
+
+rectangle Kino {
+  usecase "Sitzplatz reservieren" as UC1
+  usecase "Angebote verwalten" as UC2
+  usecase "Preise verwalten" as UC3
+  usecase "Verfügbarkeit prüfen" as UC4
+}
+
+fc -- UC1
+UC2 -- fa
+UC1 -- fa
+UC3 -- fa
+fc -- UC4
+UC4 --fa
+@enduml
