@@ -2,11 +2,11 @@
 left to right direction
 
 class CinemaHall{
-viewer: Costumer
+viewer: Customer
 movie: Movie
 }
 
-class Costumer {
+class Customer {
 id: int
 firstname: String
 lastname: String
