@@ -1,8 +1,10 @@
 @startuml
 class Room{
--kino: Kino
+-roomNumber: int
 }
-class Movie{}
+class Movie{
+-length: double
+}
 
 class Row{
 -room: Room
