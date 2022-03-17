@@ -1,4 +1,5 @@
 @startuml
+
 class Room{
 -roomNumber: int
 }
@@ -39,7 +40,5 @@ Presentation "1" <-- "*" Price
 Row "1" <-- "*" Price
 Seat "1" <-- "*" Ticket
 Seat "*" <-- "1" Row
-
-
 
 @enduml
