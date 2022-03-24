@@ -1,0 +1,72 @@
+= Pflichtenheft
+1.0.0, 2021-11-18: Team: Klose Peter, Oliver Schatzberger, Lummerstorfer Lukas, Hager Sebastian
+
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+=== Ausgangssituation
+
+Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik.
+
+
+=== Istzustand
+----
+Beschreibung der speziellen Situation zB in der Abteilung
+----
+=== Problemstellung
+=== Aufgabenstellung
+==== Funktionale Anforderungen
+
+[plantuml,wireframe,png]
+----
+@startsalt
+{
+Name         | "                 "
+Modifiers:   | { (X) public | () default | () private | () protected
+	            [] abstract | [] final   | [] static }
+Superclass:  | { "java.lang.Object " | [Browse...] }
+}
+@endsalt
+----
+==== Nichtfunktionale Anforderungen (NFA)
+=== Ziele
+=== Mengengerüst
+=== Rahmenbedingungen
+zB Vorgaben vom Auftraggeber
+
+== Entwurf "Wie mache ich es"
+=== Systemarchitektur
+=== ...
+
+== Projekthandbuch "Organisatorische Rahmenbedingungen"
+
+=== GANTT-Diagramm
+
+mit User-Stories (definiert in YouTrack)
+
+[plantuml,gantt-protoype,png]
+----
+@startuml
+[Test prototype] lasts 10 days
+[Prototype completed] happens at [Test prototype]'s end
+[Setup assembly line] lasts 12 days
+[Setup assembly line] starts at [Test prototype]'s end
+[Test prototype 2] lasts 3 days
+[Test prototype 2] starts at [Prototype completed]'s end
+@enduml
+----
+
+* link:minutes-of-meeting.html[Protokollvorlage]
+* link:demo.html[Demo]
+
+
