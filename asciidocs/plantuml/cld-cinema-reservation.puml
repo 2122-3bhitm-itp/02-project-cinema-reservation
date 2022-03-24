@@ -1,31 +1,44 @@
 @startuml
-left to right direction
 
-class CinemaHall{
-viewer: Costumer
-movie: Movie
+class Room{
+-roomNumber: int
+}
+class Movie{
+-length: double
 }
 
-class Costumer {
-id: int
-firstname: String
-lastname: String
-address: String
+class Row{
+-room: Room
+-normalPrice: double
+}
+
+class Seat{
+-row: int
+-place: int
+}
+
+class Presentation{
+-dateTime: LocalDateTime
+}
+
+class Price{
+-presentation: Presentation
+-row: Row
+-specialPrice: double
 }
 
 class Ticket{
-date: date
-price: double
+-seat: Seat
+-presentation: Presentation
 }
 
-class Movie{
-name: String
-length: int
-}
-CinemaHall --> Movie
-CinemaHall "*" --> "1" Costumer : Costumer >
+Room "1" <-- "*" Row
+Room "1" <-- "*" Presentation
 
-Costumer "*" -- "*" Movie
+Movie "1" <-- "*" Presentation
+Presentation "1" <-- "*" Price
+Row "1" <-- "*" Price
+Seat "1" <-- "*" Ticket
+Seat "*" <-- "1" Row
 
-(Costumer, Movie) .. Ticket
 @enduml

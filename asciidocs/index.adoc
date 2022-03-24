@@ -1,6 +1,5 @@
 = Projektauftrag
-Oliver Schatzberger
-1.0.0, 2021-11-18: Team: Klose Peter, Lummerstorfer Lukas, Hager Sebastian
+1.0.0, 2021-11-18: Team: Klose Peter, Oliver Schatzberger, Lummerstorfer Lukas, Hager Sebastian
 
 ifndef::imagesdir[:imagesdir: images]
 //:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
