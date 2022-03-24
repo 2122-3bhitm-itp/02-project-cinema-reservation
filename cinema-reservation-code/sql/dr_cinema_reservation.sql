@@ -1,6 +1,6 @@
-DROP TABLE answer;
-DROP TABLE s_transaction;
-DROP TABLE survey;
-DROP TABLE answer_option;
-DROP TABLE question;
-DROP TABLE questionnaire;
+DROP TABLE movie;
+DROP TABLE room;
+DROP TABLE seat;
+DROP TABLE presentation;
+DROP TABLE c_row;
+DROP TABLE ticket;
