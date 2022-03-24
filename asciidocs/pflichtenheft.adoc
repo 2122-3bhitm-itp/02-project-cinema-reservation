@@ -16,31 +16,30 @@ ifdef::backend-html5[]
 
 === Ausgangssituation
 
-Die HTL Leonding ist eine HTL im oö. Zentralraum mit ca. 1000 Schülern und den Fachabteilungen Medientechnik, Informatik.
-
+Kinobesuche sind für viele Menschen ein wichtiger Bestandteil ihrer Freizeitgestaltung.
+Genauso wie für die Schüler der HTL Leonding. Deshalb haben wir uns dazu entschlossen ein Projekt
+in diesem Themenbereich durchzuführen.
 
 === Istzustand
 ----
-Beschreibung der speziellen Situation zB in der Abteilung
+Viele Menschen Besuchen täglich Kinos und kaufen sich Kinotickets vor Ort.
+Dabei stellen sie bei den Kassen an und erwerben Tickets für die gewünschten Vorstellungen.
+
 ----
 === Problemstellung
-=== Aufgabenstellung
-==== Funktionale Anforderungen
+Es gibt viele Menschen die gerne von zuhause, der Arbeit oder der Schule ihr Tickets buchen würden.
 
-[plantuml,wireframe,png]
-----
-@startsalt
-{
-Name         | "                 "
-Modifiers:   | { (X) public | () default | () private | () protected
-	            [] abstract | [] final   | [] static }
-Superclass:  | { "java.lang.Object " | [Browse...] }
-}
-@endsalt
-----
-==== Nichtfunktionale Anforderungen (NFA)
+=== Aufgabenstellung
+Es soll eine Applikation entwickelt werden, die es ermöglicht Tickets von überall einfach zu Buchen und
+zu bezahlen. Dabei soll der Film und der gewünschte Sitzplatz einfach gewählt werden können und die Verfügbarkeit
+der Auswahl stets einsichtig sein
+
 === Ziele
+Wir wollen eine für den Benutzer einfach zu verstehende Oberfläche programmieren.
+In der einfach Navigiert werden  kann und er seine Bestllungen einsehen kann.
+
 === Mengengerüst
+
 === Rahmenbedingungen
 zB Vorgaben vom Auftraggeber
 
@@ -49,22 +48,6 @@ zB Vorgaben vom Auftraggeber
 === ...
 
 == Projekthandbuch "Organisatorische Rahmenbedingungen"
-
-=== GANTT-Diagramm
-
-mit User-Stories (definiert in YouTrack)
-
-[plantuml,gantt-protoype,png]
-----
-@startuml
-[Test prototype] lasts 10 days
-[Prototype completed] happens at [Test prototype]'s end
-[Setup assembly line] lasts 12 days
-[Setup assembly line] starts at [Test prototype]'s end
-[Test prototype 2] lasts 3 days
-[Test prototype 2] starts at [Prototype completed]'s end
-@enduml
-----
 
 * link:minutes-of-meeting.html[Protokollvorlage]
 * link:demo.html[Demo]
