@@ -10,6 +10,7 @@ class TicketTest {
     @Test
     void createTicket() {
         //arrange
+        //Ticket firstTicket = new Ticket(, );
 
         //act
 
