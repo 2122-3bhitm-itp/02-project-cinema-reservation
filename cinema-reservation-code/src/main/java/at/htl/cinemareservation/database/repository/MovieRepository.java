@@ -1,4 +1,4 @@
-package at.htl.cinemareservation.repository;
+package at.htl.cinemareservation.database.repository;
 
 import at.htl.cinemareservation.controller.Persistent;
 import at.htl.cinemareservation.model.Movie;
