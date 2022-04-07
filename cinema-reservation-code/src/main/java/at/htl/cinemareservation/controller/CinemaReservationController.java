@@ -3,7 +3,8 @@ package at.htl.cinemareservation;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class
+CinemaReservationController {
     @FXML
     private Label welcomeText;
 
