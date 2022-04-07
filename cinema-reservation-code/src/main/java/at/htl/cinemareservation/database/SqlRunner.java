@@ -1,6 +1,6 @@
 package at.htl.cinemareservation.database;
 
-import at.htl.survey.controller.Database;
+import at.htl.cinemareservation.controller.Database;
 import org.apache.ibatis.jdbc.ScriptRunner;
 
 
