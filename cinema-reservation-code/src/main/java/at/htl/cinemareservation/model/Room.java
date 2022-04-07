@@ -1,6 +1,7 @@
 package at.htl.cinemareservation.model;
 
 public class Room {
+    private long id ;
     private int roomNumber;
 
     public Room(int roomNumber) {

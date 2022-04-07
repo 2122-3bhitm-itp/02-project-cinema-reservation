@@ -3,6 +3,7 @@ package at.htl.cinemareservation.model;
 import java.time.LocalDateTime;
 
 public class Presentation {
+    private long id ;
     private LocalDateTime startTime;
 
     public Presentation(LocalDateTime startTime) {

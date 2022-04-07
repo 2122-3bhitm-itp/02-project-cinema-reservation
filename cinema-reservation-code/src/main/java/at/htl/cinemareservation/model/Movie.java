@@ -1,6 +1,7 @@
 package at.htl.cinemareservation.model;
 
 public class Movie {
+    private long id ;
     private final int length;
     private final String title;
     private String genre;
