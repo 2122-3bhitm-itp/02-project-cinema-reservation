@@ -1,6 +1,7 @@
 package at.htl.cinemareservation.model;
 
 public class Price {
+    private long id ;
     private Presentation presentation;
     private Row row;
     private double specialPrice;

@@ -1,6 +1,7 @@
 package at.htl.cinemareservation.model;
 
 public class Seat {
+    private long id ;
     private final int row;
     private final int place;
 

@@ -1,6 +1,7 @@
 package at.htl.cinemareservation.model;
 
 public class Ticket {
+    private long id ;
     private Seat seat;
     private final Presentation presentation;
 
