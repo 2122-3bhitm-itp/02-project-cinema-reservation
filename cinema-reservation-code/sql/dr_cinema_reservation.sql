@@ -1,6 +1,7 @@
-DROP TABLE movie;
-DROP TABLE room;
-DROP TABLE seat;
-DROP TABLE presentation;
-DROP TABLE c_row;
 DROP TABLE ticket;
+DROP TABLE seat;
+DROP TABLE PRICE;
+DROP TABLE c_row;
+DROP TABLE presentation;
+DROP TABLE room;
+DROP TABLE movie;

@@ -1,212 +1,189 @@
 --=============
---QUESTIONNAIRE
+--MOVIE
 --=============
 
-INSERT INTO questionnaire (qn_description)   -- id = 1
-   VALUES ('Schüler-Feedback männl.');
-INSERT INTO questionnaire (qn_description)   -- id = 2
-   VALUES ('Schüler-Feedback weibl.');
-INSERT INTO questionnaire (qn_description)   -- id = 3
-   VALUES ('Rezepte-Quiz');
-
-
-
--- q_type (wird nur in Java als enum implementiert):
--- TEXT - MULTIPLE - SINGLE - NUMBER - YESNO
-
-
+INSERT INTO MOVIE (MOVIE_ID, TITLE, DEFAULT_PRICE, LENGTH)
+    VALUES (1,'Spider-Man: No Way Home',18.99,148);
+INSERT INTO MOVIE (MOVIE_ID, TITLE, DEFAULT_PRICE, LENGTH)
+    VALUES (2,'Morbius',18.99,104);
+INSERT INTO MOVIE (MOVIE_ID, TITLE, DEFAULT_PRICE, LENGTH)
+    VALUES (3,'The Batman',18.99,178);
+INSERT INTO MOVIE (MOVIE_ID, TITLE, DEFAULT_PRICE, LENGTH)
+    VALUES (4,'Doctor Strange in the Multiverse of Madness',18.99,126);
 
 --=============
---QUESTION
+--ROOM
 --=============
 
---SINGLE
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 1
-   VALUES ('Der Lehrer ist fair - gerecht', 'SINGLE', 1);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 2
-   VALUES ('Der Lehrer ist humorvoll - fröhlich', 'SINGLE', 1);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 3
-   VALUES ('Der Lehrer ist hilfsbereit - unterstützend', 'SINGLE', 1);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 4
-    VALUES ('Der Lehrer ist freundlich', 'SINGLE', 1);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 5
-    VALUES ('Der Lehrer ist engagiert - aktiv', 'SINGLE', 1);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 6
-    VALUES ('Der Lehrer ist verständnisvoll - rücksichtsvoll', 'SINGLE', 1);
-
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 7
-   VALUES ('Die Lehrerin ist fair - gerecht', 'SINGLE', 2);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 8
-   VALUES ('Die Lehrerin ist humorvoll - fröhlich', 'SINGLE', 2);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 9
-   VALUES ('Die Lehrerin ist hilfsbereit - unterstützend', 'SINGLE', 2);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 10
-    VALUES ('Die Lehrerin ist freundlich', 'SINGLE', 2);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 11
-    VALUES ('Die Lehrerin ist engagiert - aktiv', 'SINGLE', 2);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 12
-    VALUES ('Die Lehrerin ist verständnisvoll - rücksichtsvoll', 'SINGLE', 2);
-
-
--- FREITEXT
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 13
-    VALUES ('Wie macht man WanTan-Suppe?', 'TEXT', 3);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 14
-    VALUES ('Wie macht man Kartofellbrei?', 'TEXT', 3);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 15
-    VALUES ('An diesem Lehrer gefällt mir...', 'TEXT', 2);
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 16
-    VALUES ('An diesem Lehrer stört mir ...', 'TEXT', 2);
-
-
+INSERT INTO ROOM (ROOM_ID)
+    VALUES (1);
+INSERT INTO ROOM (ROOM_ID)
+    VALUES (2);
 
 --=============
---ANSWER_OPTION
+--PRESENTATION
 --=============
 
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('völlig zu',4,1);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('eher zu',3,1);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('eher nicht zu',2,1);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('überhaupt nicht zu',1,1);
-
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('völlig zu',4,2);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('eher zu',3,2);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('eher nicht zu',2,2);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-   VALUES ('überhaupt nicht zu',1,2);
-
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('völlig zu',4,3);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher zu',3,3);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher nicht zu',2,3);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('überhaupt nicht zu',1,3);
-
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('völlig zu',4,4);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher zu',3,4);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher nicht zu',2,4);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('überhaupt nicht zu',1,4);
-
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('völlig zu',4,5);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher zu',3,5);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher nicht zu',2,5);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('überhaupt nicht zu',1,5);
-
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('völlig zu',4,6);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher zu',3,6);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('eher nicht zu',2,6);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('überhaupt nicht zu',1,6);
-
-
-
-
---INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
---   VALUES ('',,);
-
-
-
-
---SINGLE WITH SMILEYS
-INSERT INTO question (q_text, q_type, q_qn_id)              -- id = 14
-    VALUES ('Wie zufrieden bist du mit deinem LEHRER insgesamt?', 'SINGLE', 1);
-
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('sehr zufrieden',5,14);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('zufrieden',4,14);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('mittelmäßig',3,14);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('unzufrieden',2,14);
-INSERT INTO answer_option (ao_text, ao_value, ao_q_id)
-    VALUES ('sehr unzufrieden',1,14);
-
-
-
-
+INSERT INTO PRESENTATION (PRESENTATION_ID, MOVIE_ID, ROOM_ID,STARTTIME)
+    VALUES (1,1,1,'2022-04-30 20:00:00');
+INSERT INTO PRESENTATION (PRESENTATION_ID, MOVIE_ID, ROOM_ID, STARTTIME)
+    VALUES (2,3,1,'2022-05-01 18:30:00');
 
 --=============
---SURVEY
+--ROW
 --=============
 
-INSERT INTO survey (s_creator,s_qn_id,s_date)    -- id = 1
-    VALUES ('Thomas Stütz',1,'2020-04-18');
+--ROOM1
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (1,1,0);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (2,1,0);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (3,1,0);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (4,1,0);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (5,1,0);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (6,1,2.5);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (7,1,2.5);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (8,1,2.5);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (9,1,2.5);
+INSERT INTO C_ROW (ROW_ID, ROOM_ID, ADDITIONAL_CHARGE)
+    VALUES (10,1,2.5);
 
-INSERT INTO survey (s_creator,s_qn_id,s_date)    -- id = 2
-    VALUES ('Michael Holzmann',2,'2020-04-18');
-
-INSERT INTO survey (s_creator,s_qn_id,s_date)     -- id = 3
-    VALUES ('Robert Reder',3,'2020-04-18');
-
-INSERT INTO survey (s_creator,s_qn_id,s_date)     -- id = 3
-    VALUES ('ab',3,'2010-04-18');
-
-
-
---=============
---TRANSACTION
---=============
-
-INSERT INTO s_transaction(t_transactionscode,t_password,t_is_used,t_s_id)    -- id = 1
-    VALUES('1234567ABC','iAn57Hde',false,1);
-
-INSERT INTO s_transaction(t_transactionscode,t_password,t_is_used,t_s_id)    -- id = 2
-    VALUES('145678Ch','abcgh6',true,1);
-
-INSERT INTO s_transaction(t_transactionscode,t_password,t_is_used,t_s_id)    -- id = 3
-    VALUES('GH456','jsfh76',false,2);
-
-INSERT INTO s_transaction(t_transactionscode,t_password,t_is_used,t_s_id)    -- id = 4
-    VALUES('dWr3s6','jlknfh',true,2);
-
-INSERT INTO s_transaction(t_transactionscode,t_password,t_is_used,t_s_id)    -- id = 3
-    VALUES('OJEW23','uihwfa23',false,3);
-
-INSERT INTO s_transaction(t_transactionscode,t_password,t_is_used,t_s_id)    -- id = 4
-    VALUES('OOIJ33','9jufew',false,3);
-
-
-
+--ROOM2
 
 --=============
---ANSWER
+--SEAT
 --=============
-INSERT INTO answer (a_t_id,a_q_id,a_s_id,a_answer_text)    -- id = 1
-    VALUES (1,2,1,'Bin sehr zufrieden');
 
-INSERT INTO answer (a_t_id,a_q_id,a_s_id,a_answer_text)    -- id = 2
-    VALUES (1,3,1,'Bin mittelmäßig zufrieden');
+--ROOM1
 
-INSERT INTO answer (a_t_id,a_q_id,a_s_id,a_answer_text)    -- id = 3
-    VALUES (1,4,1,'Bin gar nicht zufrieden');
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (1,1);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (2,1);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (3,1);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (4,1);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (5,1);
 
-INSERT INTO answer (a_t_id,a_q_id,a_s_id,a_answer_text)    -- id = 4
-    VALUES (2,1,2,'Bin sehr zufrieden');
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (6,2);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (7,2);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (8,2);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (9,2);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+    VALUES (10,2);
 
-INSERT INTO answer (a_t_id,a_q_id,a_s_id,a_answer_text)    -- id = 5
-    VALUES (2,2,2,'Bin mittelmäßig zufrieden');
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (11,3);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (12,3);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (13,3);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (14,3);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (15,3);
 
-INSERT INTO answer (a_t_id,a_q_id,a_s_id,a_answer_text)    -- id = 6
-    VALUES (2,3,2,'Bin gar nicht zufrieden');
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (16,4);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (17,4);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (18,4);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (19,4);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (20,4);
+
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (21,5);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (22,5);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (23,5);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (24,5);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (25,5);
+
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (26,6);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (27,6);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (28,6);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (29,6);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (30,6);
+
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (31,7);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (32,7);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (33,7);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (34,7);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (35,7);
+
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (36,8);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (37,8);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (38,8);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (39,8);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (40,8);
+
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (41,9);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (42,9);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (43,9);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (44,9);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (45,9);
+
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (46,10);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (47,10);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (48,10);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (49,10);
+INSERT INTO SEAT (SEAT_ID, ROW_ID)
+VALUES (50,10);
+
+--=============
+--TICKET
+--=============
+
+INSERT INTO TICKET (TICKET_ID, SEAT_ID, PRESENTATION_ID)
+    VALUES (1,38,1);
+
+--=============
+--PRICE
+--=============
+
+INSERT INTO PRICE (PRESENTATION_ID, ROW_ID)
+    VALUES (1,8);
 

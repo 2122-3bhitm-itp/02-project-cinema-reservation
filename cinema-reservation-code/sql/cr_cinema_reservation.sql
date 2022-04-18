@@ -2,7 +2,8 @@
 CREATE TABLE movie (
                     movie_id INT NOT NULL PRIMARY KEY,
                     title VARCHAR(200) NOT NULL,
-                    price INT NOT NULL
+                    default_price DOUBLE NOT NULL,
+                    length INT NOT NULL
 );
 
 CREATE TABLE room (
@@ -10,8 +11,11 @@ CREATE TABLE room (
 );
 
 CREATE TABLE presentation (
-                              presentation_id INT NOT NULL PRIMARY KEY,
-                              startTime TIMESTAMP not null
+                    presentation_id INT NOT NULL PRIMARY KEY,
+                    room_id INT REFERENCES room(room_id),
+                    movie_id INT REFERENCES movie(movie_id),
+                    startTime TIMESTAMP not null
+
 );
 
 CREATE TABLE c_row (
@@ -34,7 +38,16 @@ CREATE TABLE ticket (
 
 
 CREATE TABLE price (
+                    value DOUBLE,
                     presentation_id INT REFERENCES presentation(presentation_id),
                     row_id INT REFERENCES c_row(row_id),
                     special_price DOUBLE PRECISION
 );
+
+
+/*
+ TODO:
+    - add SEQUENCE
+    - add TRIGGER
+
+ */
