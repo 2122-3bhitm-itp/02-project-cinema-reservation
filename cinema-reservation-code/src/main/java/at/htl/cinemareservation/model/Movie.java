@@ -1,7 +1,7 @@
 package at.htl.cinemareservation.model;
 
 public class Movie {
-    private int id ;
+    private Long id;
     private final int length;
     private final String title;
     private String genre;
@@ -13,7 +13,9 @@ public class Movie {
         this.genre = genre;
         this.price = price;
     }
-
+    public Long getId() {
+        return id;
+    }
     public int getLength() {
         return length;
     }

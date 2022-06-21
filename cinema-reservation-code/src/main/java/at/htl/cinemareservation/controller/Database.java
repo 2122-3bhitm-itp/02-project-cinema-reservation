@@ -4,6 +4,7 @@ import org.apache.derby.jdbc.ClientDataSource;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Database {
@@ -22,11 +23,4 @@ public class Database {
         return dataSource;
     }
 
-    public void createTableTest(){
-        try (Connection conn = getDataSource().getConnection()) {
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
 }

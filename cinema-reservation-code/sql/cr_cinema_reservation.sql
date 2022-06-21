@@ -54,10 +54,3 @@ CREATE TABLE ticket (
                     presentation_id INT CONSTRAINT TICK_PRES_FK REFERENCES presentation(presentation_id),
                     CONSTRAINT TICK_SEAT_FK foreign key(seat_id,row_id,room_id) REFERENCES seat(seat_id, row_id, room_id)
 );
-
-
-/*
- TODO:
-    - add SEQUENCE
-    - add TRIGGER
- */
