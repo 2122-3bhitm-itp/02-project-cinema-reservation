@@ -1,7 +1,7 @@
 package at.htl.cinemareservation.model;
 
 public class Row {
-    private long id ;
+    private int nr;
     private final Room room;
     private double additionalCharge;
 
