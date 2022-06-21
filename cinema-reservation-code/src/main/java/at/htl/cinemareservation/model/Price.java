@@ -11,6 +11,10 @@ public class Price {
         this.row = row;
         this.specialPrice = specialPrice;
     }
+    public Price(Presentation presentation, Row row) {
+        this.presentation = presentation;
+        this.row = row;
+    }
 
     public Presentation getPresentation() {
         return presentation;
