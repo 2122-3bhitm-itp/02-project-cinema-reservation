@@ -4,6 +4,9 @@ import java.time.LocalDateTime;
 
 public class Presentation {
     private long id ;
+    Movie movie;
+    Room room;
+    double price;
     private LocalDateTime startTime;
 
     public Presentation(LocalDateTime startTime) {

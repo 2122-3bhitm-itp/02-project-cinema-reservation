@@ -2,15 +2,15 @@ package at.htl.cinemareservation.model;
 
 public class Seat {
     private long id ;
-    private final int row;
+    Row row;
     private final int place;
 
-    public Seat(int row, int place) {
+    public Seat(Row row, int place) {
         this.row = row;
         this.place = place;
     }
 
-    public int getRow() {
+    public Row getRow() {
         return row;
     }
 
