@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MovieRepository implements Persistent<Movie> {
 
-    private DataSource dataSource = Database.getDataSource();
+    private final DataSource dataSource = Database.getDataSource();
     @Override
     public void save(Movie entity) {
         if (entity.getId() == null) {
