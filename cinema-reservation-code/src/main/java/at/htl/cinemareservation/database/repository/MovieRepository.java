@@ -6,6 +6,7 @@ import at.htl.cinemareservation.model.Movie;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -31,6 +32,18 @@ public class MovieRepository implements Persistent<Movie> {
     @Override
     public void insert(Movie entity) {
         try (Connection connection = dataSource.getConnection()) {
+
+            //insert into database
+            String sql = "insert into MOVIE (TITLE, DEFAULT_PRICE, LENGTH) VALUES (?, ?, ?)";
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            statement.setString(1,entity.getTitle());
+            statement.setDouble(2,entity.getPrice());
+            statement.setInt(3,entity.getLength());
+
+            if (statement.executeUpdate() == 0) {
+                throw new SQLException("insert failded!");
+            }
 
         } catch (SQLException e) {
             e.printStackTrace();
