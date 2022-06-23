@@ -25,6 +25,19 @@ public class MovieRepository implements Persistent<Movie> {
     public void update(Movie entity) {
         try (Connection connection = dataSource.getConnection()) {
 
+            long id = entity.getId();
+
+            String sql = "UPDATE MovieRepository SET  title=?, default_price=?, length=? WHERE movie_id= ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            statement.setString(1,entity.getTitle());
+            statement.setDouble(2,entity.getPrice());
+            statement.setInt(3,entity.getLength());
+            statement.setLong(4,id);
+
+            if (statement.executeUpdate() == 0) {
+                throw new SQLException("update failded!");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
