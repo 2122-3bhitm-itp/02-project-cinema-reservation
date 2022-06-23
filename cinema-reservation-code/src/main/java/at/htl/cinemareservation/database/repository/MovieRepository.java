@@ -66,6 +66,19 @@ public class MovieRepository implements Persistent<Movie> {
     @Override
     public void delete(long id) {
 
+        try (Connection connection = dataSource.getConnection()) {
+            String sql = "DELETE FROM answer WHERE movie_id=?";
+
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setLong(1, id);
+
+            if (statement.executeUpdate() == 0) {
+                throw new SQLException("Delete failed");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
@@ -74,7 +87,6 @@ public class MovieRepository implements Persistent<Movie> {
     }
 
     @Override
-    public Movie findById(long id) {
-        return null;
-    }
+    public Movie findById(long id) {return null;}
+
 }
