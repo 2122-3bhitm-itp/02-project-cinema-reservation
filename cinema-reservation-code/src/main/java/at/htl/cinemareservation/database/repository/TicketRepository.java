@@ -25,6 +25,20 @@ public class TicketRepository implements Persistent<Ticket> {
     public void update(Ticket entity) {
         try (Connection connection = dataSource.getConnection()) {
 
+            //insert into database
+            String sql = "UPDATE Ticket SET  seat_id=?, row_id=?, room_id=?, presentation_id=? WHERE ticket_id=?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+
+            statement.setLong(1,entity.getSeat().getNr());
+            statement.setInt(2,entity.getSeat().getRow().getNr());
+            statement.setInt(3,entity.getPresentation().getRoom().getRoomNumber());
+            statement.setInt(4,entity.getPresentation().getId());
+            statement.setLong(5,entity.getId());
+
+            if (statement.executeUpdate() == 0) {
+                throw new SQLException("update failded!");
+            }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -41,7 +55,8 @@ public class TicketRepository implements Persistent<Ticket> {
 
             statement.setLong(1,entity.getSeat().getNr());
             statement.setInt(2,entity.getSeat().getRow().getNr());
-            statement.setInt(3,entity.getPresentation().getId());
+            statement.setInt(3,entity.getPresentation().getRoom().getRoomNumber());
+            statement.setInt(4,entity.getPresentation().getId());
 
             if (statement.executeUpdate() == 0) {
                 throw new SQLException("insert failded!");
@@ -54,6 +69,20 @@ public class TicketRepository implements Persistent<Ticket> {
     }
     @Override
     public void delete(long id) {
+
+        try (Connection connection = dataSource.getConnection()) {
+            String sql = "DELETE FROM Ticket  WHERE ticket_id=?";
+
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setLong(1, id);
+
+
+            if (statement.executeUpdate() == 0) {
+                throw new SQLException("failed to delte Ticket");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 
