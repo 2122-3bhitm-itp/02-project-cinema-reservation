@@ -27,7 +27,7 @@ public class MovieRepository implements Persistent<Movie> {
 
             long id = entity.getId();
 
-            String sql = "UPDATE MovieRepository SET  title=?, default_price=?, length=? WHERE movie_id= ?";
+            String sql = "UPDATE Movie SET  title=?, default_price=?, length=? WHERE movie_id= ?";
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setString(1,entity.getTitle());
@@ -67,7 +67,7 @@ public class MovieRepository implements Persistent<Movie> {
     public void delete(long id) {
 
         try (Connection connection = dataSource.getConnection()) {
-            String sql = "DELETE FROM answer WHERE movie_id=?";
+            String sql = "DELETE FROM Movie WHERE movie_id=?";
 
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setLong(1, id);
