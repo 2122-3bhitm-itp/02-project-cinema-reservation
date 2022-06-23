@@ -36,7 +36,7 @@ public class MovieRepository implements Persistent<Movie> {
             statement.setLong(4,id);
 
             if (statement.executeUpdate() == 0) {
-                throw new SQLException("update failded!");
+                throw new SQLException("update failed!");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -47,7 +47,7 @@ public class MovieRepository implements Persistent<Movie> {
         try (Connection connection = dataSource.getConnection()) {
 
             //insert into database
-            String sql = "insert into MOVIE (TITLE, DEFAULT_PRICE, LENGTH) VALUES (?, ?, ?)";
+            String sql = "insert into Movie (TITLE, DEFAULT_PRICE, LENGTH) VALUES (?, ?, ?)";
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setString(1,entity.getTitle());
@@ -55,7 +55,7 @@ public class MovieRepository implements Persistent<Movie> {
             statement.setInt(3,entity.getLength());
 
             if (statement.executeUpdate() == 0) {
-                throw new SQLException("insert failded!");
+                throw new SQLException("insert failed!");
             }
 
         } catch (SQLException e) {

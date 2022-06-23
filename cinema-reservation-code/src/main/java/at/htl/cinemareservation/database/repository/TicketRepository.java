@@ -36,7 +36,7 @@ public class TicketRepository implements Persistent<Ticket> {
             statement.setLong(5,entity.getId());
 
             if (statement.executeUpdate() == 0) {
-                throw new SQLException("update failded!");
+                throw new SQLException("update failed!");
             }
 
         } catch (SQLException e) {
@@ -50,7 +50,7 @@ public class TicketRepository implements Persistent<Ticket> {
         try (Connection connection = dataSource.getConnection()) {
 
             //insert into database
-            String sql = "insert into TICKET (SEAT_ID, ROW_ID, ROOM_ID, PRESENTATION_ID) values (?,?,?,?)";
+            String sql = "insert into Ticket (SEAT_ID, ROW_ID, ROOM_ID, PRESENTATION_ID) values (?,?,?,?)";
             PreparedStatement statement = connection.prepareStatement(sql);
 
             statement.setLong(1,entity.getSeat().getNr());
@@ -59,7 +59,7 @@ public class TicketRepository implements Persistent<Ticket> {
             statement.setInt(4,entity.getPresentation().getId());
 
             if (statement.executeUpdate() == 0) {
-                throw new SQLException("insert failded!");
+                throw new SQLException("insert failed!");
             }
 
         } catch (SQLException e) {
@@ -78,7 +78,7 @@ public class TicketRepository implements Persistent<Ticket> {
 
 
             if (statement.executeUpdate() == 0) {
-                throw new SQLException("failed to delte Ticket");
+                throw new SQLException("failed to delete Ticket");
             }
         } catch (SQLException e) {
             e.printStackTrace();

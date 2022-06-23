@@ -1,5 +1,6 @@
 package at.htl.cinemareservation.model;
 
+import java.sql.Date;
 import java.time.LocalDateTime;
 
 public class Presentation {
@@ -13,7 +14,7 @@ public class Presentation {
         this.startTime = startTime;
     }
 
-    public LocalDateTime getStartTime() {
+    public Date getStartTime() {
         return startTime;
     }
 
