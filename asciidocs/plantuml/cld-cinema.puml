@@ -1,0 +1,46 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Movie {
+   price: double
+   title: String
+   length: int
+   id: Long
+   genre: String
+}
+class Presentation {
+   id: int
+   room: Room
+   price: double
+   movie: Movie
+   startTime: LocalDateTime
+}
+class Room {
+   roomNumber: int
+}
+class Row {
+   room: Room
+   nr: int
+   additionalCharge: double
+}
+class Seat {
+   nr: int
+   row: Row
+   place: int
+}
+class Ticket {
+   id: long
+   seat: Seat
+   presentation: Presentation
+}
+
+Presentation "1" *-[#595959,plain]-> "movie\n1" Movie        
+Presentation "1" *-[#595959,plain]-> "room\n1" Room         
+Row          "1" *-[#595959,plain]-> "room\n1" Room         
+Seat         "1" *-[#595959,plain]-> "row\n1" Row          
+Ticket       "1" *-[#595959,plain]-> "presentation\n1" Presentation 
+Ticket       "1" *-[#595959,plain]-> "seat\n1" Seat         
+@enduml

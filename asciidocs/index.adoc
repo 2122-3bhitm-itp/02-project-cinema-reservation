@@ -115,5 +115,5 @@ include::plantuml/ucd-cinema-reservation.puml[]
 
 [plantuml,cld]
 ----
-include::plantuml/cld-cinema-reservation.puml[]
+include::plantuml/cld-cinema.puml[]
 ----
