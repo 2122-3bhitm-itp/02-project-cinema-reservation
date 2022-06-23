@@ -10,6 +10,14 @@ public class Row {
         this.additionalCharge = additionalCharge;
     }
 
+    public int getNr() {
+        return nr;
+    }
+
+    public void setNr(int nr) {
+        this.nr = nr;
+    }
+
     public Room getRoom() {
         return room;
     }
